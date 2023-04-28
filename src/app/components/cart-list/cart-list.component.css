@@ -1,0 +1,28 @@
+.container-cart {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.first-cart-child {
+    width: 25%;
+    height: 25vh;
+    text-align: center;
+    margin-right: 1em;
+}
+
+.first-cart-child li {
+    list-style: none;
+}
+
+.first-cart-child li:first-child {
+    font-weight: bold;
+}
+
+.title {
+    margin-top: 1em;
+    font-weight: bold;
+}
+

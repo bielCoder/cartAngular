@@ -1,0 +1,11 @@
+<div *ngIf="product">
+    <p>Product Detail</p>
+    <ul>
+        <li>ID : {{ product.id }}</li>
+        <li>Name : {{ product.name }}</li>
+        <li *ngIf="product.description">Description: {{ product.description }}</li>
+        <li>Price : {{ product.price | currency: 'BRL'}}</li>
+    </ul>
+    <button class="btn btn-success ms-3" (click)="addToCart(product)">buy</button>
+    <!-- <app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts> -->
+</div>

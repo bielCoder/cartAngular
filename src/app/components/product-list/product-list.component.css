@@ -1,0 +1,34 @@
+li {
+    list-style: none;
+}
+
+.list {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+.title {
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+
+.container-content {
+    padding: auto;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.description {
+    font-size: .75em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.title-product {
+    text-decoration: none;
+    font-weight: bold;
+}

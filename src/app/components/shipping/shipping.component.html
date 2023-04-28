@@ -1,0 +1,17 @@
+<div class="main-container-shipping">
+    <p class="title">Shipping Prices</p>
+    <ul class="list" *ngFor="let shipping of shippings">
+        <li><span>{{ shipping.name }}</span>{{ shipping.price | currency: 'BRL'}}</li>
+    </ul>
+</div>
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" formControlName="name" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="name">Address</label>
+        <input type="text" formControlName="address" class="form-control">
+    </div>
+    <input type="submit" class="btn btn-primary">
+</form>

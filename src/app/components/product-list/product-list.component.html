@@ -1,0 +1,17 @@
+<div class="main-container">
+    <p class="title container">Products</p>
+    <ul class="container-fluid list">
+        <div *ngFor="let product of products" class="container-content">
+            <li>
+                <a title="{{product.name + ' details'}}" routerLink="product/{{product.id}}" class="title-product">
+                    {{ product.name }}
+                </a>
+            </li>
+            <li *ngIf="product.description" class="description">
+               {{ product.description }}
+            </li>
+            <button type="button" class="btn btn-primary" (click)="share(product.name)">Share</button>
+        </div>
+    </ul>
+   
+</div>

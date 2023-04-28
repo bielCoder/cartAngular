@@ -1,0 +1,41 @@
+.main-container-shipping {
+    margin: 1em;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.list li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebebeb;
+    padding: .7em;
+    margin-right: 2em;
+    font-size: .75em;
+}
+
+.list li:first-child {
+    padding-left: 2em;
+}
+
+.list li:last-child {
+    padding-right: 2em;
+}
+
+.form-group {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 80vw;
+}

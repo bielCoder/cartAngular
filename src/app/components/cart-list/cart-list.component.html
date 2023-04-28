@@ -1,0 +1,11 @@
+<div class="container-cart-content container-fluid">
+    <p class="title">Cart</p>
+    <div class="container-cart">
+        <div class="first-cart-child" *ngFor="let cart of carts" id="cart-{{cart.id}}">
+           <li>{{ cart.name }}</li>
+           <li *ngIf="cart.description">{{ cart.description }}</li>
+           <li>{{ cart.price | currency: 'BRL' }}</li>
+           <button class="btn btn-danger" (click)="devolucao(cart)">Devolver</button>
+        </div>
+    </div>
+</div>

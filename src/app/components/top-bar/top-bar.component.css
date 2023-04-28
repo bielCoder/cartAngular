@@ -1,0 +1,44 @@
+.container-top-navbar {
+    position: relative;
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em;
+}
+
+.title-navbar {
+    font-size: 1.2em;
+    margin-top: .5em;
+    margin-left: 1.5em;
+}
+
+.checkout {
+    text-decoration: none;
+    color: var(--primary-color);
+    display: flex;
+    gap: .3em;
+    background-color: var(--second-color);
+    padding: .5em;
+    border-radius: .2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.title-navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link-shipping-price {
+    position: absolute;
+    margin: 0 auto;
+    right: 9.5em;
+    font-size: .89em;
+}
+
+.link-shipping-price a {
+    color: #fff;
+    text-decoration: none;
+}
